@@ -1,0 +1,11 @@
+.whitebanner {
+  width: 100%;
+  margin-top: -7em;
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  padding: 7vw;
+  font-family: AvenirNext-Medium;
+  font-size: 5vw;
+  color: #000000;
+}
