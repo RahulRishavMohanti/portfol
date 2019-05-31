@@ -2,15 +2,14 @@
   display: grid;
   grid-template-columns: 2fr 4fr 2fr 3fr 2fr auto;
   grid-template-rows: 5vw 5vw 5vw 5vw;
-  padding: 10px;
   position: fixed;
   bottom: 0;
   z-index: 3;
   font-size: 5vh;
 
-  width: 100%;
+  width: 96vw;
   height: 40vh;
-  padding: 5vh;
+  padding: 5vh 2vw 5vh 2vw;
 }
 
 .grid-item:nth-child(odd) {
