@@ -6,7 +6,7 @@ class Grid extends Component {
     this.handleScroll = this.handleScroll.bind(this);
 
     this.state = {
-      opac: 1
+      col: "#222222"
     };
   }
   componentDidMount() {
@@ -17,56 +17,49 @@ class Grid extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll(event) {
-    if (window.scrollY > 1100) {
-      var x = window.scrollY / 5000;
-      this.setState({ opac: 1 - x });
+    if (window.scrollY > 6098) {
+      this.setState({ col: "white" });
+    } else {
+      this.setState({ col: "#222222" });
     }
   }
   render() {
     return (
-      <div className="grid-container">
-        <div
-          className="grid-item"
-          style={{ gridColumnStart: 1, gridColumnEnd: 3, textAlign: "center" }}
-        >
-          HTML
-        </div>
-        <div className="grid-item">C++</div>
-        <div className="grid-item" />
-        <div
-          className="grid-item"
-          style={{ gridColumnStart: 2, gridColumnEnd: 3, textAlign: "center" }}
-        >
-          WebDev
-        </div>
-        <div
-          className="grid-item"
-          style={{ gridColumnStart: 1, gridColumnEnd: 2, textAlign: "center" }}
-        >
-          Arduino
-        </div>
-        <div className="grid-item" />
-        <div className="grid-item" />
-        <div className="grid-item">ReactJS</div>
-        <div className="grid-item" />
-        <div className="grid-item" />
-        <div className="grid-item" />
-        <div className="grid-item">C++</div>
+      <div className="grid-container" style={{ color: this.state.col }}>
         <div
           className="grid-item"
           style={{
-            gridColumn: 4,
-            gridRowStart: 2,
+            gridRowStart: 1,
+            gridRowEnd: 4,
+            textAlign: "center"
+          }}
+        >
+          HTML
+        </div>
+        <div
+          className="grid-item"
+          style={{
+            gridRowStart: 1,
+            gridRowEnd: 4,
+            gridColumn: 3,
+            textAlign: "center",
+            verticalAlign: "middle"
+          }}
+        >
+          C++
+        </div>
+        <div
+          className="grid-item"
+          style={{
+            gridColumnStart: 4,
+            gridColumnEnd: 6,
+            gridRowStart: 1,
             gridRowEnd: 4,
             textAlign: "center"
           }}
         >
           Python
         </div>
-
-        <div className="grid-item" />
-        <div className="grid-item" />
-        <div className="grid-item" />
       </div>
     );
   }

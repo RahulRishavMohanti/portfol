@@ -18,8 +18,7 @@ class Blackcomp extends Component {
   }
   handleScroll(event) {
     if (window.scrollY > 1273) {
-      var x = window.scrollY / 5000;
-      this.setState({ opac: 1 - x });
+      this.setState({ opac: 1 - 0.0003 * window.scrollY });
     } else {
       this.setState({ opac: 1 });
     }

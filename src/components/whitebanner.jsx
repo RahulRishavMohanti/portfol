@@ -20,14 +20,14 @@ class WhiteBanner extends Component {
   }
   handleScroll(event) {
     if (window.scrollY > 1100) {
-      var mass = Math.min(0, -8.1 + 0.001 * window.scrollY);
+      var mass = Math.min(0, -61 + 0.01 * window.scrollY);
       this.setState({ wid: mass });
       console.log(mass);
     }
   }
   render() {
     return (
-      <div className="whitebanner" style={{ marginTop: this.state.wid + "em" }}>
+      <div className="whitebanner" style={{ marginTop: this.state.wid + "vh" }}>
         {this.props.content}
       </div>
     );

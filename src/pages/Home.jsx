@@ -15,7 +15,7 @@ class Home extends Component {
         <WhiteBanner
           content="Hello, I am Rahul, Software Developer 
 based in India. I work on projects that 
-interest me. "
+interest me."
         />
         <Bighead title="RAHUL RISHAV" />
         <Bighead2 title="MOHANTI" />
