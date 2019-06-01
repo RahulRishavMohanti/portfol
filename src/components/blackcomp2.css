@@ -1,0 +1,30 @@
+.blackcomp2 {
+  width: 100vw;
+  height: 50vh;
+  bottom: -50vh;
+  position: fixed;
+  z-index: 4;
+
+  background-color: black;
+  font-size: 5vh;
+  color: white;
+  white-space: initial;
+}
+img {
+  height: 5vh;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url("../images/myr.otf");
+}
+.content {
+  margin-top: 1vh;
+  font-family: myFirstFont;
+  font-size: 4vh;
+
+  text-align: center;
+}

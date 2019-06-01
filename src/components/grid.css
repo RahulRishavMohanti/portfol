@@ -1,24 +1,22 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 4fr 2fr 3fr 2fr auto;
-  grid-template-rows: 5vw 5vw 5vw 5vw;
+  grid-template-columns: 2fr 4fr 2fr 3fr auto;
+  grid-template-rows: 10vh 10vh 8vh 2vh;
   position: fixed;
   bottom: 0;
   z-index: 3;
-  font-size: 5vh;
+  font-size: 3vw;
 
-  width: 96vw;
+  width: 92vw;
   height: 40vh;
-  padding: 5vh 2vw 5vh 2vw;
+  padding: 5vh 4vw 5vh 4vw;
 }
 
-.grid-item:nth-child(odd) {
-  padding: 20px;
+.grid-item1 {
   font-family: AvenirNext-Medium;
   text-align: center;
 }
-.grid-item:nth-child(even) {
-  padding: 20px;
+.grid-item2 {
   font-family: AvenirNext-UltraLight;
   text-align: center;
 }

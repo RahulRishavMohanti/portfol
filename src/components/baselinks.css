@@ -1,0 +1,29 @@
+.baselinks {
+  width: 100vw;
+  height: 15vh;
+  bottom: 0vh;
+  position: fixed;
+  z-index: 4;
+
+  background-color: black;
+  font-size: 5vh;
+  color: white;
+  white-space: initial;
+}
+.img2 {
+  width: 3vh;
+  margin-top: 5vh;
+  height: 3vh;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+}
