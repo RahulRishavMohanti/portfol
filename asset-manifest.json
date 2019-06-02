@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/portfol/static/css/main.9bab9e59.chunk.css",
-    "main.js": "/portfol/static/js/main.8af0ce1e.chunk.js",
-    "main.js.map": "/portfol/static/js/main.8af0ce1e.chunk.js.map",
+    "main.css": "/portfol/static/css/main.dac84b51.chunk.css",
+    "main.js": "/portfol/static/js/main.0bd5ff7e.chunk.js",
+    "main.js.map": "/portfol/static/js/main.0bd5ff7e.chunk.js.map",
     "runtime~main.js": "/portfol/static/js/runtime~main.6326cbec.js",
     "runtime~main.js.map": "/portfol/static/js/runtime~main.6326cbec.js.map",
-    "static/js/2.7254bb26.chunk.js": "/portfol/static/js/2.7254bb26.chunk.js",
-    "static/js/2.7254bb26.chunk.js.map": "/portfol/static/js/2.7254bb26.chunk.js.map",
+    "static/js/2.28f717ff.chunk.js": "/portfol/static/js/2.28f717ff.chunk.js",
+    "static/js/2.28f717ff.chunk.js.map": "/portfol/static/js/2.28f717ff.chunk.js.map",
     "index.html": "/portfol/index.html",
-    "precache-manifest.30302a88ac27f6da78f5816706850326.js": "/portfol/precache-manifest.30302a88ac27f6da78f5816706850326.js",
+    "precache-manifest.334c916f39fb37c98c8c70879841a9b5.js": "/portfol/precache-manifest.334c916f39fb37c98c8c70879841a9b5.js",
     "service-worker.js": "/portfol/service-worker.js",
-    "static/css/main.9bab9e59.chunk.css.map": "/portfol/static/css/main.9bab9e59.chunk.css.map",
-    "static/media/whitecomp.css": "/portfol/static/media/RM.3f0cf452.png",
+    "static/css/main.dac84b51.chunk.css.map": "/portfol/static/css/main.dac84b51.chunk.css.map",
+    "static/media/whitecomp.css": "/portfol/static/media/RM.9e957376.png",
+    "static/media/git.png": "/portfol/static/media/git.3480db5e.png",
+    "static/media/grad.png": "/portfol/static/media/grad.85fbca26.png",
+    "static/media/insta.png": "/portfol/static/media/insta.c5ddecc6.png",
+    "static/media/linkedin.png": "/portfol/static/media/linkedin.f08c524d.png",
     "static/media/logo.svg": "/portfol/static/media/logo.5d5d9eef.svg",
-    "static/media/bighead2.css": "/portfol/static/media/sk.32483a74.jpg"
+    "static/media/blackcomp2.css": "/portfol/static/media/myr.9df71d4f.otf",
+    "static/media/bighead2.css": "/portfol/static/media/sk.32483a74.jpg",
+    "static/media/visa.png": "/portfol/static/media/visa.458c8b51.png",
+    "static/media/work.png": "/portfol/static/media/work.08ff6f46.png"
   }
 }
