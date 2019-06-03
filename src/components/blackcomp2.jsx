@@ -8,7 +8,8 @@ class Blackcomp2 extends Component {
     this.handleScroll = this.handleScroll.bind(this);
 
     this.state = {
-      wid: 100
+      wid: 100,
+      inh: window.innerHeight
     };
   }
   componentDidMount() {
@@ -22,12 +23,18 @@ class Blackcomp2 extends Component {
     if (window.scrollY > 6100) {
       var scr = window.scrollY - 5000;
       var mass = Math.min(0, -61 + 0.01 * scr);
-      this.setState({ wid: mass });
+      this.setState({ wid: mass / 100 });
     }
   }
   render() {
     return (
-      <div className="blackcomp2" style={{ bottom: this.state.wid + "vh" }}>
+      <div
+        className="blackcomp2"
+        style={{
+          bottom: window.innerHeight * this.state.wid + "px",
+          height: window.innerHeight * 0.5 + "px"
+        }}
+      >
         <img src={require("../images/grad.png")} />
         <div className="content">{this.props.content}</div>
       </div>

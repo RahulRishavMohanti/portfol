@@ -30,7 +30,8 @@ class WhiteBanner extends Component {
       <div
         className="whitebanner"
         style={{
-          marginTop: this.state.wid + "vh"
+          marginTop: this.state.wid + "vh",
+          height: window.innerHeight * 0.4 + "px"
         }}
       >
         {this.props.content}

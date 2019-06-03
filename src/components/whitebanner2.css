@@ -1,7 +1,7 @@
 .whitebanner2 {
   width: 100vw;
   height: 0vh;
-  margin-top: 50vh;
+  margin-top: 0vh;
   position: fixed;
   z-index: 5;
   background-color: white;
@@ -12,9 +12,9 @@
   overflow: hidden;
   text-overflow: initial;
 }
-img {
+.img2 {
   height: 5vh;
-  margin-top: 10vh;
+  margin-top: 60vh;
   margin-left: auto;
   margin-right: auto;
   display: block;

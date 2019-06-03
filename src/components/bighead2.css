@@ -9,6 +9,6 @@
   background: url(../images/sk.jpg);
   background-size: contain;
   -webkit-background-clip: text;
-  z-index: 3;
+  z-index: 1;
   -webkit-text-fill-color: transparent;
 }

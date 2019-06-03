@@ -25,7 +25,13 @@ class Grid extends Component {
   }
   render() {
     return (
-      <div className="grid-container" style={{ color: this.state.col }}>
+      <div
+        className="grid-container"
+        style={{
+          color: this.state.col,
+          height: window.innerHeight * 0.4 + "px"
+        }}
+      >
         <div
           className="grid-item2"
           style={{

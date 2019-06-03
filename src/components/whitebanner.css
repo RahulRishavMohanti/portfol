@@ -1,9 +1,8 @@
 .whitebanner {
   width: 92vw;
-  height: 40vh;
   margin-top: -50vh;
   position: fixed;
-  z-index: 4;
+  z-index: 6;
   background-color: white;
   padding: 5vh 4vw 5vh 4vw;
   font-family: AvenirNext-Medium;

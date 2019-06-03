@@ -21,8 +21,8 @@ class WhiteBanner2 extends Component {
   }
   handleScroll(event) {
     if (window.scrollY > 11104) {
-      var mass = Math.min(35, -111.04 + 0.01 * window.scrollY);
-      this.setState({ heit: mass });
+      var mass = Math.min(85, -111.04 + 0.01 * window.scrollY);
+      this.setState({ heit: mass / 100 });
       console.log("Window height");
       console.log(mass);
     } else {
@@ -31,8 +31,19 @@ class WhiteBanner2 extends Component {
   }
   render() {
     return (
-      <div className="whitebanner2" style={{ height: this.state.heit + "vh" }}>
-        <img src={require("../images/work.png")} />
+      <div
+        className="whitebanner2"
+        style={{ height: window.innerHeight * this.state.heit + "px" }}
+      >
+        <img
+          style={{
+            height: 5 + "vh",
+            width: 5 + "vh",
+            marginTop: window.innerHeight * 0.6 + "px"
+          }}
+          className="img2"
+          src={require("../images/work.png")}
+        />
 
         <img
           style={{ height: 3 + "vh", marginTop: 2 + "vh" }}
