@@ -10,20 +10,22 @@
   color: white;
   white-space: initial;
 }
-.img2 {
-  width: 3vh;
-  margin-top: 5vh;
-  height: 3vh;
+.img3 {
+  width: 5vh;
+  margin-top: 0vh;
+  height: 5vh;
 }
 
 .flex-container {
   display: flex;
+  height: 100%;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .flex-container > div {
-  width: 3vw;
-  height: 3vw;
+  width: 5vh;
+  height: 5vh;
   text-align: center;
 }

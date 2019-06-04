@@ -20,8 +20,8 @@ class WhiteBanner2 extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll(event) {
-    if (window.scrollY > 11104) {
-      var mass = Math.min(85, -111.04 + 0.01 * window.scrollY);
+    if (window.scrollY > 2230) {
+      var mass = Math.min(35, -223 + 0.1 * window.scrollY);
       this.setState({ heit: mass / 100 });
       console.log("Window height");
       console.log(mass);
@@ -33,13 +33,16 @@ class WhiteBanner2 extends Component {
     return (
       <div
         className="whitebanner2"
-        style={{ height: window.innerHeight * this.state.heit + "px" }}
+        style={{
+          height: window.innerHeight * this.state.heit + "px",
+          marginTop: window.innerHeight * 0.5 + "px"
+        }}
       >
         <img
           style={{
             height: 5 + "vh",
             width: 5 + "vh",
-            marginTop: window.innerHeight * 0.6 + "px"
+            marginTop: window.innerHeight * 0.1 + "px"
           }}
           className="img2"
           src={require("../images/work.png")}

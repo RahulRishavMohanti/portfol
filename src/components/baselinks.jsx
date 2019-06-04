@@ -19,14 +19,14 @@ class Baselinks extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll(event) {
-    if (window.scrollY > 14637) {
-      var x = window.scrollY - 10000;
-      var mass = Math.max(0, -0.4637 + 0.0001 * x);
+    if (window.scrollY > 2579) {
+      var mass = Math.max(0, -0.7737 + 0.0003 * window.scrollY);
       this.setState({ opac: mass });
-      console.log("x");
-      console.log(x);
+
       console.log("Opacity");
       console.log(this.state.opac);
+    } else {
+      this.setState({ opac: 0 });
     }
   }
   render() {
@@ -37,15 +37,19 @@ class Baselinks extends Component {
       >
         <div className="flex-container">
           <div>
-            <img className="img2" src={require("../images/insta.png")} />
+            <a href="https://www.instagram.com/minimal_dev/">
+              <img className="img3" src={require("../images/insta.png")} />
+            </a>
           </div>
           <div>
-            {" "}
-            <img className="img2" src={require("../images/git.png")} />
+            <a href="https://github.com/RahulRishavMohanti">
+              <img className="img3" src={require("../images/git.png")} />
+            </a>
           </div>
           <div>
-            {" "}
-            <img className="img2" src={require("../images/linkedin.png")} />
+            <a href="https://www.linkedin.com/in/rahul-rishav-mohanti-98aaaa138/">
+              <img className="img3" src={require("../images/linkedin.png")} />
+            </a>
           </div>
         </div>
       </div>

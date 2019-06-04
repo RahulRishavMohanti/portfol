@@ -17,8 +17,8 @@ class Blackcomp extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll(event) {
-    if (window.scrollY > 1273) {
-      this.setState({ opac: 1 - 0.0003 * window.scrollY });
+    if (window.scrollY > 1100) {
+      this.setState({ opac: 1 - 0.0006 * window.scrollY });
     } else {
       this.setState({ opac: 1 });
     }

@@ -14,7 +14,7 @@ import Baselinks from "../components/baselinks";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div >
         <WhiteComp />
         <WhiteBanner
           content="Hello, I am Rahul, Software Developer 

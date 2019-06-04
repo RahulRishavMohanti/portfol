@@ -20,10 +20,12 @@ class Blackcomp2 extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll(event) {
-    if (window.scrollY > 6100) {
-      var scr = window.scrollY - 5000;
-      var mass = Math.min(0, -61 + 0.01 * scr);
+    if (window.scrollY > 1718) {
+      var scr = window.scrollY - 618;
+      var mass = Math.min(0, -161 + 0.1 * scr);
       this.setState({ wid: mass / 100 });
+    } else {
+      this.setState({ wid: 100 });
     }
   }
   render() {

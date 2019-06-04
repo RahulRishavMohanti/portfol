@@ -17,7 +17,7 @@ class Grid extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll(event) {
-    if (window.scrollY > 6098) {
+    if (window.scrollY > 1608) {
       this.setState({ col: "white" });
     } else {
       this.setState({ col: "#222222" });

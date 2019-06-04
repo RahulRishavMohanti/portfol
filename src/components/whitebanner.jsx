@@ -21,8 +21,10 @@ class WhiteBanner extends Component {
   }
   handleScroll(event) {
     if (window.scrollY > 1100) {
-      var mass = Math.min(0, -61 + 0.01 * window.scrollY);
+      var mass = Math.min(0, -161 + 0.1 * window.scrollY);
       this.setState({ wid: mass });
+    } else {
+      this.setState({ wid: 100 });
     }
   }
   render() {
